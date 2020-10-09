@@ -1059,6 +1059,7 @@ textarea:focus {
 .copy_box pre {
     width: 100%;
     white-space: pre-line;
+    font-family: "PF DinText Pro";
     font-size: 17px;
     line-height: 20px;
     color: #000000;
