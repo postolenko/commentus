@@ -1,3 +1,9 @@
+function getWrapperOffset() {
+  $(".wrapper").css({
+    "padding-top" : $("#header").height() + "px"
+  });
+}
+
 var w = window,
 d = document,
 e = d.documentElement,
@@ -10,7 +16,7 @@ $(window).load(function() {
 });
 
 $(window).resize(function() {
-
+  getWrapperOffset();
 });
 
 $(document).scroll(function() {
@@ -18,7 +24,7 @@ $(document).scroll(function() {
 });
 
 $(document).ready(function() {
-
+    getWrapperOffset();
     // if( $(".portfolio_slider").length > 0 ) {
     //     $(".portfolio_slider").not(".slick-initialized").slick({
     //         dots: true,
@@ -93,6 +99,14 @@ $(document).ready(function() {
     $(".copy_code").on("click", function(e) {
       e.preventDefault();
       copyToClipboard("#coupon-field");
+    });
+
+    // -----------------
+
+    $(".green_box .close_btn").on("click", function(e) {
+      e.preventDefault();
+      $(this).closest(".green_box").remove();
+      getWrapperOffset();
     });
 
 });
