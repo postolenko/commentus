@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">	
+	<title>Commentus</title>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+	<!-- Header -->
+		
+	<header class="header" id="header">
+		<div class="row">
+			<div class="header_site">
+				<div class="left">
+					<div class="inline">
+						<a href="#" class="logo">
+							<img src="img/logo.svg" alt="" />
+						</a>
+					</div>
+					<div class="inline">
+						<a href="#" class="thumb_link">
+							<div>
+								<i class="clock"></i>
+							</div>
+							<div>
+								<span>Кабинет</span>
+							</div>
+						</a>
+					</div>
+					<div class="inline">
+						<a href="#" class="thumb_link">
+							<div>
+								<i class="bubble"></i>
+							</div>
+							<div>
+								<span>Комментарии</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="right">
+					<div class="inline">
+						<a href="#" class="thumb_link">
+							<div>
+								<i class="question"></i>
+							</div>
+							<div>
+								<span>Помощь</span>
+							</div>
+						</a>
+					</div>
+					<div class="dropdowns_wrapp">
+						<div class="dropdown_wrapp">
+							<div class="dropdown dropdown_lang">							
+								<div class="drp_title">
+									<p>English</p>
+								</div>
+								<div class="dropdown_box">
+									<ul class="lang_list">
+										<li>
+											<a href="#" class="lang_link active">
+												<div>
+													<img src="img/" alt="" />
+												</div>
+												<div>
+													<span>Русский</span>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="lang_link">
+												<div>
+													<img src="img/" alt="" />
+												</div>
+												<div>
+													<span>English</span>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="lang_link">
+												<div>
+													<img src="img/" alt="" />
+												</div>
+												<div>
+													<span>中文</span>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="lang_link">
+												<div>
+													<img src="img/" alt="" />
+												</div>
+												<div>
+													<span>हिन्दी</span>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="lang_link">
+												<div>
+													<img src="img/" alt="" />
+												</div>
+												<div>
+													<span>Español</span>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="lang_link">
+												<div>
+													<img src="img/" alt="" />
+												</div>
+												<div>
+													<span>Português</span>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="lang_link">
+												<div>
+													<img src="img/" alt="" />
+												</div>
+												<div>
+													<span>日本語</span>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="lang_link">
+												<div>
+													<img src="img/" alt="" />
+												</div>
+												<div>
+													<span>Deutsch</span>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="dropdown_wrapp">
+							<div class="dropdown">								
+								<div class="drp_title">
+									<div class="user_title">
+										<div>
+											<div class="user_icon_wrapp">
+												<img src="img/user.svg" alt="" />
+											</div>
+										</div>
+										<div>
+											<p>user@mail.com</p>
+										</div>
+									</div>
+								</div>
+								<div class="dropdown_box">
+									<ul class="menu_list menu_list_2">
+										<li><a href="#"><span><img src="img/user_2.svg" alt="" /></span><span>Профиль</span></a></li>
+										<li><a href="#"><span><img src="img/settings.svg" alt="" /></span><span>Настройки</span></a></li>
+										<li><a href="#"><span><img src="img/money.svg" alt="" /></span><span>Оплата</span></a></li>
+										<li><a href="#"><span><img src="img/door.svg" alt="" /></span><span>Выход</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="respmenubtn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- /Header -->
+
+	<!-- Content -->
+		<div class="content">
+
+			<!-- Section 1 - comments -->
+
+			<section>
+				<div class="row">
+					<!-- Breadcrumbs -->
+					<div class="breadcrumbs_wrapp">
+						<ul class="breadcrumbs">
+							<li><a href="#">Кабинет</a></li>
+							<li><a href="#">Мои сайты</a></li>
+							<li><a href="#">unu.ru</a></li>
+						</ul>
+					</div>
+					<!-- /Breadcrumbs -->
+					<div class="two_cols_templ">
+						<div class="left">
+							<div class="sidebar_box">
+								<ul class="menu_list">
+									<li><a href="#"><span><img src="img/globus.svg" alt="" /></span><span>Мои сайты</span></a></li>
+									<li><a href="#"><span><img src="img/bubble_2.svg" alt="" /></span><span>Комментарии</span></a></li>
+									<li><a href="#"><span><img src="img/chart.svg" alt="" /></span><span>Аналитика</span></a></li>
+									<li><a href="#"><span><img src="img/user_2.svg" alt="" /></span><span>Профиль</span></a></li>
+									<li><a href="#"><span><img src="img/money.svg" alt="" /></span><span>Оплата</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="right">			
+							<div class="h1_wrapp">
+								<h1>Управление комментариями</h1>
+							</div>
+							<div class="custom_select_wrapp">
+								<div class="custom_select">
+									<input type="hidden" name="#" />
+									<div class="custom_select_title">
+										<p>Комментарии со всех сайтов</p>
+									</div>
+									<div class="custom_select_dropdown">
+										<p>Комментарии со всех сайтов</p>
+										<p>Опция 2</p>
+										<p>Опция 3</p>
+										<p>Опция 4</p>
+										<p>Опция 5</p>
+									</div>
+								</div>
+							</div>
+							<div class="tabs">
+								<div class="tabs_links">
+									<label class="tab-link" for="tab_1">Все</label>
+									<label class="tab-link" for="tab_2">Одобренные</label>
+									<label class="tab-link" for="tab_3">В ожидании</label>
+									<label class="tab-link" for="tab_4">Спам</label>
+									<label class="tab-link" for="tab_5">Удалённые</label>
+								</div>
+								<div class="tabs-content">
+									<input type="radio" name="tabs" class="radio-tab" id="tab_1">
+									<div class="tab">
+										<div class="checkboxes_array">
+											<div class="comments_items_header">
+												<div>
+													<div class="checkbox main_checkbox">
+														<input type="checkbox" name="#" />
+													</div>
+												</div>
+												<div>
+													<div class="custom_select custom_select_2">
+														<input type="hidden" name="#" />
+														<div class="custom_select_title">
+															<p>Сортировать по дате</p>
+														</div>
+														<div class="custom_select_dropdown">
+															<p>Сортировать по дате</p>
+															<p>Опция 2</p>
+															<p>Опция 3</p>
+															<p>Опция 4</p>
+															<p>Опция 5</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="comment_item orange">
+												<div>
+													<div class="checkbox ch_childrens">
+														<input type="checkbox" name="filter_ch" />
+													</div>
+												</div>
+												<div>
+													<div class="comment_item_header">
+														<div class="inline">
+															<h3>Алекcандр Никитин</h3>
+														</div>
+														<div class="inline">
+															<p><i class="facebook"></i>14.07.2020 18:33</p>
+														</div>
+														<div class="inline">
+															<p><a href="#" class="site_link"><i class="link"></i>https://site.ru/page/asdasasdsdsdsdd</a></p>
+														</div>
+													</div>
+													<div class="comment_item_content">
+														<p>Ударение существенно аллитерирует глубокий дискурс. Катахреза, соприкоснувшись в чем-то со своим главным антагонистом в постструктурной поэтике, жизненно начинает мифопоэтический хронотоп. Расположение эпизодов диссонирует речевой акт. Речевой акт, на первый взгляд, многопланово вызывает урбанистический дискурс, но не рифмами. Комбинаторное приращение постоянно.</p>
+													</div>
+													<div class="comment_item_footer">
+														<div class="inline">
+															<p><a href="#"><i class="checked"></i>Одобрить</a></p>
+														</div>
+														<div class="inline">
+															<p><a href="#"><i class="bag"></i>Спам</a></p>
+														</div>
+														<div class="inline">
+															<p><a href="#"><i class="trash"></i>Удалить</a></p>
+														</div>
+														<div class="inline">
+															<p><a href="#"><i class="stop"></i>Бан юзера</a></p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="comment_item red">
+												<div>
+													<div class="checkbox ch_childrens">
+														<input type="checkbox" name="filter_ch" />
+													</div>
+												</div>
+												<div>
+													<div class="comment_item_header">
+														<div class="inline">
+															<h3>Алекcандр Никитин</h3>
+														</div>
+														<div class="inline">
+															<p><i class="facebook"></i>14.07.2020 18:33</p>
+														</div>
+														<div class="inline">
+															<p><a href="#" class="site_link"><i class="link"></i>https://site.ru/page/asdasasdsdsdsdd</a></p>
+														</div>
+													</div>
+													<div class="comment_item_content">
+														<p>Ударение существенно аллитерирует глубокий дискурс. Катахреза, соприкоснувшись в чем-то со своим главным антагонистом в постструктурной поэтике, жизненно начинает мифопоэтический хронотоп. Расположение эпизодов диссонирует речевой акт. Речевой акт, на первый взгляд, многопланово вызывает урбанистический дискурс, но не рифмами. Комбинаторное приращение постоянно.</p>
+													</div>
+													<div class="comment_item_footer">
+														<div class="inline">
+															<p><a href="#"><i class="checked"></i>Одобрить</a></p>
+														</div>
+														<div class="inline">
+															<p><a href="#"><i class="bag"></i>Спам</a></p>
+														</div>
+														<div class="inline">
+															<p><a href="#"><i class="trash"></i>Удалить</a></p>
+														</div>
+														<div class="inline">
+															<p><a href="#"><i class="stop"></i>Бан юзера</a></p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="comment_item">
+												<div>
+													<div class="checkbox ch_childrens">
+														<input type="checkbox" name="filter_ch" />
+													</div>
+												</div>
+												<div>
+													<div class="comment_item_header">
+														<div class="inline">
+															<h3>Алекcандр Никитин</h3>
+														</div>
+														<div class="inline">
+															<p><i class="facebook"></i>14.07.2020 18:33</p>
+														</div>
+														<div class="inline">
+															<p><a href="#" class="site_link"><i class="link"></i>https://site.ru/page/asdasasdsdsdsdd</a></p>
+														</div>
+													</div>
+													<div class="comment_item_content">
+														<p>Ударение существенно аллитерирует глубокий дискурс. Катахреза, соприкоснувшись в чем-то со своим главным антагонистом в постструктурной поэтике, жизненно начинает мифопоэтический хронотоп. Расположение эпизодов диссонирует речевой акт. Речевой акт, на первый взгляд, многопланово вызывает урбанистический дискурс, но не рифмами. Комбинаторное приращение постоянно.</p>
+													</div>
+													<div class="comment_item_footer">
+														<div class="inline">
+															<p><a href="#"><i class="checked"></i>Одобрить</a></p>
+														</div>
+														<div class="inline">
+															<p><a href="#"><i class="bag"></i>Спам</a></p>
+														</div>
+														<div class="inline">
+															<p><a href="#"><i class="trash"></i>Удалить</a></p>
+														</div>
+														<div class="inline">
+															<p><a href="#"><i class="stop"></i>Бан юзера</a></p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="pagination_wrapp">
+												<div>
+													<p>Страница:</p>
+												</div>
+												<div>
+													<ul class="pagination">
+														<li><a href="#" class="active">1</a></li>
+														<li><a href="#">2</a></li>
+														<li><a href="#">3</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<input type="radio" name="tabs" class="radio-tab" id="tab_2">
+									<div class="tab">
+										<h1>Tab 2</h1>
+									</div>
+									<input type="radio" name="tabs" class="radio-tab" id="tab_3">
+									<div class="tab">
+										<h1>Tab 3</h1>
+									</div>
+									<input type="radio" name="tabs" class="radio-tab" id="tab_4">
+									<div class="tab">
+										<h1>Tab 4</h1>
+									</div>
+									<input type="radio" name="tabs" class="radio-tab" id="tab_5">
+									<div class="tab">
+										<h1>Tab 5</h1>
+									</div>
+								</div>
+							</div>
+							<div class="pills_sect">
+								<div class="pills_sect_title">
+									<h3>Выбранные комментарии:</h3>
+								</div>
+								<div class="pills_wrapp">
+									<div>
+										<a href="#" class="green_pill"><i class="checked_white"></i>Одобрить</a>
+									</div>
+									<div>
+										<a href="#" class="red_pill"><i class="bug_white"></i>Спам</a>
+									</div>
+									<div>
+										<a href="#" class="grey_pill"><i class="close_2"></i>Удалить</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Section 1 - comments -->
+
+		</div>
+	<!-- /Content -->
+
+	<!-- Footer -->
+
+		<footer class="footer_section">
+			<div class="row">
+				<div class="footer_templ">
+					<div class="col_1">
+						<div class="corp_box">
+							<div>
+								<a href="#" class="logo_resp">
+									<img src="img/logo_resp.svg" alt="" />
+								</a>
+							</div>
+							<div>
+								<p>Используя сайт вы полностью и безоговорочно принимаете <a href="#">пользовательское соглашение</a> и <a href="#">политику приватности</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col_2">
+						<div class="footer_navs">
+							<ul class="footer_nav">
+								<li><a href="#">Тарифы</a></li>
+								<li><a href="#">О сервисе</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+							<ul class="footer_nav">
+								<li><a href="#">Установить виджет</a></li>
+								<li><a href="#">Частые вопросы</a></li>
+								<li><a href="#">API</a></li>
+							</ul>
+							<ul class="footer_nav">
+								<li><a href="#">Служба поддержки</a></li>
+								<li><a href="#">Партнёрка</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col_3">
+						<div class="soc_box">
+							<h3>Мы в соц. сетях:</h3>
+							<ul class="soc_list">
+								<li><a href="#"><img src="img/twitter.svg" alt="" /></a></li>
+								<li><a href="#"><img src="img/vk.svg" alt="" /></a></li>
+								<li><a href="#"><img src="img/youtube.svg" alt="" /></a></li>
+								<li><a href="#"><img src="img/telegram.svg" alt="" /></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	<!-- /Footer -->
+
+	</div>
+
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+	<!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css"> -->
+	<script src="vendors/js/jquery.js"></script>
+	<!-- <script src="slick/slick.js"></script> -->
+	<!-- <script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script> -->
+	<!-- <script src="vendors/js/jquery.fancybox.js"></script> -->
+	<script src="js/scripts.js"></script>
+
+</body>
+</html>
