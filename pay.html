@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">	
 	<title>Commentus</title>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
 <body>
@@ -191,7 +192,7 @@
 	<!-- Content -->
 		<div class="content">
 
-			<!-- Section 1 - Websites -->
+			<!-- Section 1 - Pay -->
 
 			<section>
 				<div class="row">
@@ -218,92 +219,95 @@
 						</div>
 						<div class="right">			
 							<div class="h1_wrapp">
-								<h1>Мои сайты</h1>
+								<h1>Оплата</h1>
 							</div>
-							<div class="two_cols_templ_2">
-								<div class="left">
-									<div class="table_2_wrapp_2">						
-										<div class="table table_2 table_2_2">
-											<div class="table_row">
-												<div class="cell">
-													<h3>Сайт</h3>
-												</div>
-												<div class="cell">
-													<h3>Комментариев</h3>
-												</div>
-												<div class="cell">
-													<h3>Страниц</h3>
-												</div>
-												<div class="cell">
-													<h3>Статус</h3>
-												</div>
-											</div>
-											<div class="table_row">
-												<div class="cell">
-													<p><a href="#" class="green_link">minter.org</a><i class="link_icon"></i></p>
-												</div>
-												<div class="cell">
-													<p><a href="#" class="grey_link">1 812</a></p>
-												</div>
-												<div class="cell">
-													<p><a href="#" class="grey_link">24</a></p>
-												</div>
-												<div class="cell">
-													<div class="tag purple_tag">Нужно <a href="#">оплатить</a></div>
-												</div>
-											</div>
-											<div class="table_row">
-												<div class="cell">
-													<p><a href="#" class="green_link">yandex.ru</a><i class="link_icon"></i></p>
-												</div>
-												<div class="cell">
-													<p><a href="#" class="grey_link">45k+</a></p>
-												</div>
-												<div class="cell">
-													<p><a href="#" class="grey_link">80k+</a></p>
-												</div>
-												<div class="cell">
-													<div class="tag green_tag">Работает</div>
-												</div>
-											</div>
-											<div class="table_row">
-												<div class="cell">
-													<p><a href="#" class="green_link">unu.ru</a><i class="link_icon"></i></p>
-												</div>
-												<div class="cell">
-													<p><a href="#" class="grey_link">0</a></p>
-												</div>
-												<div class="cell">
-													<p><a href="#" class="grey_link">0</a></p>
-												</div>
-												<div class="cell">
-													<div class="tag darkblue_tag">Ожидает установки</div>
-												</div>
+							<div class="checkboxes_array">
+								<div class="table table_2 table_2_2 pay_table">
+									<div class="table_row">
+										<div class="cell">
+											<div class="checkbox main_checkbox">
+												<label for="ch_1"><input type="checkbox" name="pay_ch" id="ch_1" />Продукт</label>
 											</div>
 										</div>
-										<div class="text_box">
-											<p>Хотите установить виджет на новый сайт? Отлично, <a href="#">добавьте сайт</a>.</p>
+										<div class="cell">
+											<h3>На месяц</h3>
+										</div>
+										<div class="cell">
+											<h3>На год (-15%)</h3>
+										</div>
+										<div class="cell">
+											<h3>Оплачен до</h3>
+										</div>
+									</div>
+									<div class="table_row">
+										<div class="cell">
+											<div class="checkbox ch_childrens">
+												<label for="ch_2"><input type="checkbox" name="pay_ch" id="ch_2" /><b>Виджет для minter.org</b></label>
+											</div>
+										</div>
+										<div class="cell">
+											<div class="radio">
+												<label for="radio_1"><input type="radio" name="r_1" id="radio_1" />400 руб</label>
+											</div>
+										</div>
+										<div class="cell">
+											<div class="radio">
+												<label for="radio_2"><input type="radio" name="r_1" id="radio_2" />400 руб</label>
+											</div>
+										</div>
+										<div class="cell">
+											<p>2020.10.20</p>
+										</div>
+									</div>
+									<div class="table_row">
+										<div class="cell">
+											<div class="checkbox ch_childrens">
+												<label for="ch_3"><input type="checkbox" name="pay_ch" id="ch_3" /><b>Виджет для yandax.ru</b></label>
+											</div>
+										</div>
+										<div class="cell">
+											<div class="radio">
+												<label for="radio_3"><input type="radio" name="r_2" id="radio_3" />400 руб</label>
+											</div>
+										</div>
+										<div class="cell">
+											<div class="radio">
+												<label for="radio_4"><input type="radio" name="r_2" id="radio_4" />4000 руб</label>
+											</div>											
+										</div>
+										<div class="cell">
+											<p>2020.10.20</p>
+										</div>
+									</div>
+									<div class="table_row">
+										<div class="cell">
+											<div class="checkbox ch_childrens">
+												<label for="ch_4"><input type="checkbox" name="pay_ch" id="ch_4" /><b>Whitelabel</b></label>
+											</div>
+										</div>
+										<div class="cell">
+											<div class="radio">
+												<label for="radio_5"><input type="radio" name="r_3" id="radio_5" />500 руб</label>
+											</div>
+										</div>
+										<div class="cell">
+											<div class="radio">
+												<label for="radio_6"><input type="radio" name="r_3" id="radio_6" />5100 руб</label>
+											</div>
+										</div>
+										<div class="cell">
+											<p>2020.12.31</p>
 										</div>
 									</div>
 								</div>
-								<div class="right">
-									<div class="pink_box">
-										<i class="coins"></i>
-										<div class="descript">
-											<h3>А вы знали?</h3>
-											<p>Вы можете мотивировать пользователей оставлять больше комментариев, раздавая специальные монеты в качестве награды.</p>
-											<a href="#" class="green_link">Как это работает →</a>
-										</div>
-									</div>
-								</div>
 							</div>
-
+							<a href="#" class="green_pill green_pill_3">Оплатить 800 руб</a>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<!-- Section 1 - Websites -->
+			<!-- Section 1 - Pay -->
 
 		</div>
 	<!-- /Content -->

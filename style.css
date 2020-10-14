@@ -1905,10 +1905,12 @@ textarea:focus {
 }
 
 .checkbox input:checked {
-    background-image: url(img/checked.svg);
-    background-size: contain;
+    background-image: url(img/checked_white.svg);
+    background-size: 10px;
     background-position: center;
     background-repeat: no-repeat;
+    border: 1px solid #1fc773;
+    background-color: #1fc773;
 }
 
 .comment_item {
@@ -3022,10 +3024,126 @@ textarea:focus {
     font-weight: bold;
 }
 
-
-
 /*-- /Section 1 - Login --*/
 
+/*-- Section 1 - Pay --*/
+
+.pay_table .table_row .cell:nth-child(1) {
+    width: 265px;
+}
+
+.pay_table .table_row .cell:nth-child(2) {
+    width: 120px;
+}
+
+.pay_table .table_row .cell:nth-child(3) {
+    width: 150px;
+}
+
+.pay_table .table_row .cell:nth-child(4) {
+    width: auto;
+}
+
+.checkbox {
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #000;
+}
+
+.checkbox label {
+    position: relative;
+    padding-left: 30px;
+}
+
+.checkbox label input {
+    background-color: #fff;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+
+.checkbox label {
+    cursor: pointer;
+}
+
+.radio {
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #000;
+}
+
+.radio label {
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+}
+
+.radio label input {
+    background-color: #fff;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    border: 1px solid #adaeb3;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.radio input:before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #000028;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: opacity;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: opacity;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: opacity;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: opacity;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.radio input:checked:before {
+    opacity: 1;
+}
+
+.green_pill_3 {
+    margin: 12px 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+/*-- /Section 1 - Pay --*/
 
 
 
