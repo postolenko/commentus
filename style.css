@@ -2247,6 +2247,10 @@ textarea:focus {
 }
 
 .green_pill {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    border: none;
     padding: 10px 13px 11px 13px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -2303,6 +2307,10 @@ textarea:focus {
 }
 
 .red_pill {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    border: none;
     padding: 10px 13px 11px 13px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -2357,6 +2365,10 @@ textarea:focus {
 }
 
 .grey_pill {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    border: none;
     padding: 10px 13px 11px 13px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -2822,10 +2834,197 @@ textarea:focus {
     border-bottom: 1px solid transparent;
 }
 
-
 /*-- /Section 1 - Websites --*/
 
+/*-- Section 1 - Login --*/
 
+.login_wrapp {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 69px 0 75px 0;
+}
+
+.tabs_2 {
+    margin: 23px 0;
+}
+
+.tabs_2 .tab {
+    background-color: #f6f7f9;
+    padding: 10px 20px;
+}
+
+.input_wrapp {
+    padding: 7px 0 7px 0;
+}
+
+.input_wrapp h3 {
+    padding-bottom: 9px;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.input_wrapp h3 a {
+    display: inline-block;
+    vertical-align: baseline;
+    border-bottom: 1px solid #8f9091;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #636364;
+    -webkit-transition-property: border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.input_wrapp h3 a:link,
+.input_wrapp h3 a:visited {
+    border-bottom: 1px solid #8f9091;
+}
+
+.input_wrapp h3 a:active,
+.input_wrapp h3 a.active {
+    border-bottom: 1px solid transparent;
+}
+
+.input_wrapp h3 a:hover {
+    border-bottom: 1px solid transparent;
+}
+
+.input_wrapp input {
+    height: 42px;
+    width: 100%;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(165, 166, 172);
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 41px;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+}
+
+.submit_wrapp {
+    padding: 15px 0 15px 0;
+}
+
+.green_pill {
+
+}
+
+.socials_wrapp {
+    padding: 3px 0 10px 0;
+}
+
+.socials_wrapp h3 {
+    padding-bottom: 9px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.socials_list {
+    display: flex;
+    display: -webkit-flex;
+    margin: 1px -7px;
+}
+
+.socials_list li {
+    margin: 0;
+    padding: 7px;
+}
+
+.socials_list li:before {
+    display: none;
+}
+
+.socials_list li a {
+    display: block;
+    min-height: 35px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid rgb(220, 220, 220);
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: box-shadow;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: box-shadow;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: box-shadow;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: box-shadow;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.socials_list li a:link,
+.socials_list li a:visited {
+    box-shadow: none;
+}
+
+.socials_list li a:active,
+.socials_list li a.active {
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
+    -moz-box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
+}
+
+.socials_list li a:hover {
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
+    -moz-box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
+}
+
+.socials_list li a img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 23px;
+    margin-right: 10px;
+}
+
+.socials_list li a span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.green_pill_2 {
+    width: 100%;
+    padding: 12px 13px 12px 13px;
+    font-weight: bold;
+}
+
+
+
+/*-- /Section 1 - Login --*/
 
 
 
