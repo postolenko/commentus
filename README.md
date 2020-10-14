@@ -5,3 +5,4 @@
 # http://postolenko.github.io/commentus/websites.html
 # http://postolenko.github.io/commentus/login.html
 # http://postolenko.github.io/commentus/pay.html
+# http://postolenko.github.io/commentus/settings.html

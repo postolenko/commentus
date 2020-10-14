@@ -1803,7 +1803,7 @@ textarea:focus {
     background-color: #1fc773;
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     opacity: 0;
     -webkit-transition-property: opacity;
@@ -2860,7 +2860,7 @@ textarea:focus {
 }
 
 .input_wrapp h3 {
-    padding-bottom: 9px;
+    /*padding-bottom: 9px;*/
     font-size: 16px;
     line-height: 20px;
     color: rgb(0, 0, 0);
@@ -2913,6 +2913,7 @@ textarea:focus {
 .input_wrapp input {
     height: 42px;
     width: 100%;
+    margin-top: 11px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
@@ -3062,7 +3063,7 @@ textarea:focus {
 .checkbox label input {
     background-color: #fff;
     position: absolute;
-    top: 2px;
+    top: 1px;
     left: 0;
 }
 
@@ -3145,7 +3146,62 @@ textarea:focus {
 
 /*-- /Section 1 - Pay --*/
 
+/*-- Section 1 - Settings --*/
 
+.custom_select_3 {
+    max-width: 100%;
+}
+
+.custom_select_3 .custom_select_title {
+    height: 42px;
+    border-color: #a5a6ac;
+}
+
+.custom_select_3 .custom_select_title p {
+    line-height: 40px;
+}
+
+.checkboxes_sect {
+    padding-top: 12px;
+}
+
+.checkboxes_sect h3 {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.checkboxes_wrapp {
+    padding: 7px 0;
+}
+
+.checkboxes_wrapp > div {
+    padding: 2px 0;
+}
+
+.grey_p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #a8a8a8;
+}
+
+.input_wrapp h3 + .grey_p {
+    margin-top: -2px;
+}
+
+.input_wrapp .custom_select {
+    margin-top: 10px;
+}
+
+.submit_wrapp_2 {
+
+}
+
+.submit_wrapp_2 .green_pill_2 {
+    margin: 4px 0;
+    width: auto;
+}
+
+/*-- /Section 1 - Settings --*/
 
 
 
