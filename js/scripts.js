@@ -4,6 +4,17 @@ function getWrapperOffset() {
   });
 }
 
+function getPillsParams(checkboxesArray) {
+  checkboxesArray.find(".ch_childrens").each(function() {
+    if($(this).find("input").is(":checked")) {
+      checkboxesArray.find(".pills_wrapp").removeClass("disabled");
+      return false;
+    } else {
+      checkboxesArray.find(".pills_wrapp").addClass("disabled");
+    }
+  });
+}
+
 var w = window,
 d = document,
 e = d.documentElement,
@@ -39,34 +50,6 @@ $(document).scroll(function() {
 
 $(document).ready(function() {
     getWrapperOffset();
-    // if( $(".portfolio_slider").length > 0 ) {
-    //     $(".portfolio_slider").not(".slick-initialized").slick({
-    //         dots: true,
-    //         arrows: true,
-    //         autoplay: true,
-    //         autoplaySpeed: 4000,
-    //         speed: 1200,
-    //         slidesToShow: 4,
-    //         slidesToScroll: 1,
-    //         // fade: true,
-    //         responsive: [
-    //             {
-    //               breakpoint: 900,
-    //               settings: {
-    //                 slidesToShow: 2,
-    //                 slidesToScroll: 2
-    //               }
-    //             },
-    //             {
-    //               breakpoint: 540,
-    //               settings: {
-    //                 slidesToShow: 1,
-    //                 slidesToScroll: 1
-    //               }
-    //             }
-    //           ]
-    //     });
-    // }
 
     $(".drp_title").on("click", function(e) {
       e.preventDefault();
@@ -192,6 +175,11 @@ $(document).ready(function() {
 
     // -------------
 
+    $(".checkboxes_array").each(function() {
+      parentBlock = $(this);
+      getPillsParams(parentBlock);
+    });
+
     $(".main_checkbox input").on("change", function() {
         parentBlock = $(this).closest(".checkboxes_array");
         chChildrens = parentBlock.find(".ch_childrens input");
@@ -200,6 +188,7 @@ $(document).ready(function() {
         } else {
             chChildrens.prop("checked", false);
         }
+        getPillsParams(parentBlock);
     });
     
     $(".ch_childrens input").on("change", function() {
@@ -214,6 +203,110 @@ $(document).ready(function() {
                 mainCheckbox.prop("checked", true);
             }
         });
+        getPillsParams(parentBlock);
     });
+
+    // ---------------
+    // -- Валидация --
+    // ---------------
+
+    $("[type='submit']").on("click", function(e) {
+      e.preventDefault();
+      error = 0;
+      this_form = $(this).closest("form");
+        this_form.find('input, textarea, .custom_select_title').removeClass('error');
+        if(this_form.find('input').is('input[type="text"]')) {
+            text = this_form.find('input[type="text"]');
+            if(typeof text.attr('required') != typeof undefined) {
+                if(text.val().length <= 1) {
+                    text.addClass('error');
+                    error = 1;
+                }
+            }
+        }
+        if(this_form.find('input').is('input[type="email"]')) {
+            email = this_form.find('input[type="email"]');
+            if(typeof email.attr('required') != typeof undefined) {
+                if(!email.val().match(/^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$/)) {
+                    email.addClass('error');
+                    error = 1;
+                }
+            }
+        }
+        if(this_form.find('input').is('input[type="tel"]')) {
+            tel = this_form.find('input[type="tel"]');
+            if(typeof tel.attr('required') != typeof undefined) {
+                if(tel.val().length <= 1) {
+                    tel.addClass('error');
+                    error = 1;
+                }
+            }
+        }
+        if(this_form.find('input').is('input[type="password"]')) {
+            password = this_form.find('input[type="password"]');
+            if(typeof password.attr('required') != typeof undefined) {
+                if(password.val().length <= 1) {
+                    password.addClass('error');
+                    error = 1;
+                }
+            }
+        }
+        if(this_form.find('textarea')) {
+            textarea = this_form.find('textrea');
+            if(typeof textarea.attr('required') != typeof undefined) {
+                if(textarea.val().length <= 1) {
+                    textarea.addClass('error');
+                    error = 1;
+                }
+            }
+        }
+        if(this_form.find('.custom_select')) {
+            customSelectInput = this_form.find('.custom_select input');
+            if(typeof customSelectInput.attr('required') != typeof undefined) {
+                if(customSelectInput.val() == "") {
+                    customSelect = customSelectInput.closest(".custom_select");
+                    customSelect.find(".custom_select_title").addClass('error');
+                    error = 1;
+                }
+            }
+        }
+        if(error==1) {
+            return false;
+        }
+        // $.ajax({
+        // });
+    });
+
+
+    $("#submit").on("click", function (event) {
+        event.preventDefault();
+        error = 0;
+        this_form = $(this).closest("form");
+        this_form.find('input, textarea').removeClass('error');
+        if(this_form.find('input').is('input[name="name"]')) {
+            name = this_form.find('input[name="name"]');
+            if(typeof name.attr('required') != typeof undefined) {
+                if(name.val().length<=2) {
+                    name.addClass('error');
+                    error = 1;
+                }
+            }
+        }
+        if(this_form.find('input').is('input[name="email"]')) {
+            email = this_form.find('input[name="email"]');
+            if(typeof email.attr('required') != typeof undefined) {
+                if(!email.val().match(/^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$/)) {
+                    email.addClass('error');
+                    error = 1;
+                }
+            }
+        }
+        if(error==1) {
+            return false;
+        }
+        $.ajax({
+        });
+});
+
 
 });

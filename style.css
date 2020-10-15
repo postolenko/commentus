@@ -1784,10 +1784,14 @@ textarea:focus {
 }
 
 .tabs {
-    margin: 16px 0;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
+    margin: 16px 0 1px 0;
+}
+
+.tabs .tab_inner {
+    border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;    
     border: 1px solid rgb(220, 220, 220);
+    border-top: none;
 }
 
 .tabs-content {
@@ -1839,7 +1843,9 @@ textarea:focus {
 .tabs_links {
     display: flex;
     display: -webkit-flex;
-    border-bottom: 1px solid #dcdcdc;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border: 1px solid #dcdcdc;
 }
 
 .tabs_links .tab-link {
@@ -1882,6 +1888,10 @@ textarea:focus {
 }
 
 .tab-link.active:after {
+    opacity: 1;
+}
+
+.tab-link:hover:after {
     opacity: 1;
 }
 
@@ -1958,6 +1968,10 @@ textarea:focus {
     border: 1px solid rgb(168, 168, 168);
 }
 
+input[disabled] {
+    cursor: default;
+}
+
 .checkbox input:checked {
     background-image: url(img/checked_white.svg);
     background-size: 10px;
@@ -1975,6 +1989,18 @@ textarea:focus {
     position: relative;
 }
 
+.comment_item.noactive:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .4);
+    z-index: 3;
+}
+
 .comment_item.orange:before {
     display: block;
     content: "";
@@ -1984,6 +2010,7 @@ textarea:focus {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 4;
 }
 
 .comment_item.red:before {
@@ -1995,6 +2022,7 @@ textarea:focus {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 4;
 }
 
 .comment_item:nth-child(odd) {
@@ -2088,6 +2116,25 @@ textarea:focus {
     padding: 4px 0 8px 0;
 }
 
+.disable_info {
+    text-align: right;
+}
+
+.disable_info p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #717171;
+}
+
+.disable_info p i {
+    margin-right: 5px;
+}
+
+.disable_info p i.bag {
+    position: relative;
+    top: -1px;
+}
+
 .comment_item_content p {
     font-size: 16px;
     line-height: 20px;
@@ -2104,6 +2151,16 @@ textarea:focus {
 .comment_item_footer p i {
     vertical-align: top;
     margin-right: 5px;
+}
+
+.comment_item_footer p i.bag {
+    position: relative;
+    top: -1px;
+}
+
+.comment_item_footer p i.checked {
+    position: relative;
+    top: -1px;
 }
 
 .checked {
@@ -2276,11 +2333,11 @@ textarea:focus {
 }
 
 .pills_sect {
-    padding: 5px 0 9px 0;
+    padding: 23px 20px 9px 20px;
 }
 
 .pills_sect_title {
-    padding: 8px 0;
+    padding: 8px 0 1px 0;
 }
 
 .pills_sect_title h3 {
@@ -2300,6 +2357,12 @@ textarea:focus {
 
 .pills_wrapp > div {
     padding: 7px;
+}
+
+.pills_wrapp.disabled a {
+    opacity: .6;
+    pointer-events: none;
+    cursor: default;
 }
 
 .green_pill {
@@ -2536,7 +2599,7 @@ textarea:focus {
 .thumb_2 .inner {
     display: flex;
     display: -webkit-flex;
-    padding: 19px 20px;
+    padding: 25px 20px;
 }
 
 .thumb_2 .inner > div:nth-child(1) {
@@ -2554,7 +2617,7 @@ textarea:focus {
 }
 
 .thumb_2 .inner_2 {
-    padding: 17px 20px;
+    padding: 23px 20px 10px 20px;
 }
 
 .thumb_2 .inner_2 p {
@@ -2897,7 +2960,7 @@ textarea:focus {
 .login_wrapp {
     max-width: 620px;
     margin: 0 auto;
-    padding: 69px 0 75px 0;
+    padding: 40px 0 20px 0;
 }
 
 .tabs_2 {
@@ -2905,6 +2968,10 @@ textarea:focus {
 }
 
 .tabs_2 .tab {
+
+}
+
+.tabs_2 .tab_inner {
     background-color: #f6f7f9;
     padding: 10px 20px;
 }
@@ -3599,4 +3666,10 @@ footer {
 .soc_list li a:hover img {
     filter: grayscale(0);
     -webkit-filter: grayscale(0);
+}
+
+input.error,
+textarea.error,
+.custom_select_title.error {
+    border: 1px solid red;
 }

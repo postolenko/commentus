@@ -219,8 +219,7 @@
 						<div class="right">			
 							<div class="h1_wrapp">
 								<h1>Настройки сайта</h1>
-							</div>
-							
+							</div>							
 							<div class="tabs tabs_2">
 								<div class="tabs_links">
 									<label class="tab-link" for="tab_1">Основные</label>
@@ -231,68 +230,76 @@
 								<div class="tabs-content">
 									<input type="radio" name="tabs" class="radio-tab" id="tab_1">
 									<div class="tab">
-										<form>
-											<div class="input_wrapp">
-												<h3>URL вашего сайта:</h3>
-												<input type="text" placeholder="http://" />
-											</div>
-											<div class="input_wrapp">
-												<h3>Зеркала:</h3>
-												<p class="grey_p">Если ваш сайт доступен по нескольким адресам, укажите их всех через запятую.</p>
-												<input type="text" placeholder="site.ru, site.com" />
-											</div>
-											<div class="input_wrapp">
-												<h3>Локализация виджета:</h3>
-												<div class="custom_select custom_select_3">
-													<input type="hidden" name="#" />
-													<div class="custom_select_title">
-														<p>Русский</p>
-													</div>
-													<div class="custom_select_dropdown">
-														<p>Русский</p>
-														<p>Опция 2</p>
-														<p>Опция 3</p>
-														<p>Опция 4</p>
-														<p>Опция 5</p>
-													</div>
+										<div class="tab_inner">
+											<form>
+												<div class="input_wrapp">
+													<h3>URL вашего сайта:</h3>
+													<input type="text" placeholder="http://" required />
 												</div>
-											</div>
-											<div class="checkboxes_sect">
-												<h3>Премодерация для комментариев, которые:</h3>
-												<div class="checkboxes_wrapp">
-													<div>
-														<div class="checkbox">
-															<label for="ch_1_2"><input type="checkbox" name="pay_ch" id="ch_1_2">Содержат ссылки</label>
+												<div class="input_wrapp">
+													<h3>Зеркала:</h3>
+													<p class="grey_p">Если ваш сайт доступен по нескольким адресам, укажите их всех через запятую.</p>
+													<input type="text" placeholder="site.ru, site.com" required />
+												</div>
+												<div class="input_wrapp">
+													<h3>Локализация виджета:</h3>
+													<div class="custom_select custom_select_3">
+														<input type="hidden" value="Русский" name="#" required />
+														<div class="custom_select_title">
+															<p>Русский</p>
 														</div>
-													</div>
-													<div>
-														<div class="checkbox">
-															<label for="ch_1_3"><input type="checkbox" name="pay_ch" id="ch_1_3">Содержат картинки</label>
-														</div>
-													</div>
-													<div>
-														<div class="checkbox">
-															<label for="ch_1_4"><input type="checkbox" name="pay_ch" id="ch_1_4">Опубликованы с анонимных аккаунтов</label>
+														<div class="custom_select_dropdown">
+															<p>Русский</p>
+															<p>Опция 2</p>
+															<p>Опция 3</p>
+															<p>Опция 4</p>
+															<p>Опция 5</p>
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="submit_wrapp submit_wrapp_2">
-												<button type="submit" class="green_pill green_pill_2">Сохранить</button>
-											</div>
-										</form>
+												<div class="checkboxes_sect">
+													<h3>Премодерация для комментариев, которые:</h3>
+													<div class="checkboxes_wrapp">
+														<div>
+															<div class="checkbox">
+																<label for="ch_1_2"><input type="checkbox" name="pay_ch" id="ch_1_2">Содержат ссылки</label>
+															</div>
+														</div>
+														<div>
+															<div class="checkbox">
+																<label for="ch_1_3"><input type="checkbox" name="pay_ch" id="ch_1_3">Содержат картинки</label>
+															</div>
+														</div>
+														<div>
+															<div class="checkbox">
+																<label for="ch_1_4"><input type="checkbox" name="pay_ch" id="ch_1_4">Опубликованы с анонимных аккаунтов</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="submit_wrapp submit_wrapp_2">
+													<button type="submit" class="green_pill green_pill_2">Сохранить</button>
+												</div>
+											</form>
+										</div>
 									</div>
 									<input type="radio" name="tabs" class="radio-tab" id="tab_2">
 									<div class="tab">
-										<h1>Tab 2</h1>
+										<div class="tab_inner">
+											<h1>Tab 2</h1>
+										</div>
 									</div>
 									<input type="radio" name="tabs" class="radio-tab" id="tab_3">
 									<div class="tab">
-										<h1>Tab 3</h1>
+										<div class="tab_inner">
+											<h1>Tab 3</h1>
+										</div>
 									</div>
 									<input type="radio" name="tabs" class="radio-tab" id="tab_4">
 									<div class="tab">
-										<h1>Tab 4</h1>
+										<div class="tab_inner">
+											<h1>Tab 4</h1>
+										</div>
 									</div>
 								</div>
 							</div>
