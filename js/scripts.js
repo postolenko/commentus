@@ -306,7 +306,12 @@ $(document).ready(function() {
         }
         $.ajax({
         });
-});
+    });
+
+    // -----------
+
+    $("input[type='email']").inputmask("email");
+
 
 
 });
