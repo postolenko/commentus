@@ -225,12 +225,9 @@ $(document).ready(function() {
           radio.each(function() {
             if( $(this).is(":checked") ) {
               radioVal = parseInt($(this).val());
-              console.log(radioVal);
               price += radioVal;
             }
           });
-        } else {
-          console.log(0);
         }
       });
       parentBlock.find(".priceVal").text(price);
@@ -318,20 +315,26 @@ $(document).ready(function() {
       $("#respNav").toggleClass("visible");
     });
 
+    $(this).keydown(function(eventObject){
+      if (eventObject.which == 27) {
+          $("#respNav").removeClass("visible");
+      }
+    });
+
+    $(document).mouseup(function (e){
+        e.preventDefault();
+        var hide_element = $('#respNav');        
+        if (!hide_element.is(e.target)
+                && hide_element.has(e.target).length === 0) {
+                hide_element.removeClass("visible");
+        }
+    });
+
     // -----------
 
-    // This script sets OSName variable as follows:
-    // "Windows"    for all versions of Windows
-    // "MacOS"      for all versions of Macintosh OS
-    // "Linux"      for all versions of Linux
-    // "UNIX"       for all other UNIX flavors 
-    // "Unknown OS" indicates failure to detect the OS
-
-    var OSName="Unknown OS";
-    // if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
+    var OSName;
     if (navigator.appVersion.indexOf("Mac")!=-1)  $("body").addClass("ios");
     if (navigator.appVersion.indexOf("X11")!=-1) $("body").addClass("ios");
     if (navigator.appVersion.indexOf("Linux")!=-1) $("body").addClass("ios");
-    console.log('Your OS: '+OSName);
 
 });

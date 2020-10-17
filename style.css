@@ -1317,9 +1317,16 @@ textarea:focus {
     transform: translate(0, -50%);
 }
 
+.ios .menu_list li a span:nth-child(1) {
+    position: relative;
+    top: -2px;
+}
+
 .menu_list li a {
     display: inline-flex;
     display: -webkit-inline-flex;
+    align-items: center;
+    -webkit-align-items: center;
     font-size: 18px;
     line-height: 22px;
     color: #0987f2;
@@ -2166,8 +2173,10 @@ input[disabled] {
 }
 
 .comment_item_header h3 i {
+    display: inline-block;
+    vertical-align: baseline;
     position: relative;
-    top: 4px;
+    top: 1px;
     margin-left: 9px;
 }
 
