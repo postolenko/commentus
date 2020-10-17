@@ -15,7 +15,7 @@
 
 .two_cols_templ_2 > .right {
     width: 100%;
-    padding: 0;
+    padding: 20px 0;
 }
 
 /*-- /Section 1 - Dashboard  --*/
@@ -427,5 +427,17 @@
 	}
 
 	/*-- /Breadcrumbs --*/
+
+}
+
+@media only screen and (min-width: 768px) {
+
+	/*-- Resp Nav --*/
+
+	.resp_nav {
+	    right: -220px !important;
+	}
+
+	/*-- /Resp Nav --*/
 
 }

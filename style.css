@@ -1061,6 +1061,102 @@ textarea:focus {
 
 /* ----- / Responsive Menu Button ------ */
 
+/*-- Resp Nav --*/
+
+.resp_nav {
+    width: 210px;
+    height: 100vh;
+    background-color: #1ec773;
+    position: fixed;
+    top: 0;
+    right: -220px;
+    z-index: 10;
+    -webkit-transition-property: right;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: right;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: right;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: right;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: right;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.resp_nav.visible {
+    right: 0;
+}
+
+.resp_nav_header {
+    height: 64px;
+    padding: 14px 15px 10px 15px;
+    background-color: #0aa453;
+    position: relative;
+}
+
+.resp_nav_header .respmenubtn {
+    display: block;
+    position: absolute;
+    top: 23px;
+    right: 20px;
+}
+
+.resp_nav_scroll {
+    height: calc(100vh - 64px);
+    overflow-y: auto;
+}
+
+.respmenubtn_2:hover span {
+    background: #fff;
+}
+
+.respmenubtn_2.active span {
+    background: #fff;
+}
+
+.user_title_resp .user_icon_wrapp {
+    background-color: #469169;
+}
+
+.user_title_resp p {
+    display: block;
+    width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.resp_nav_scroll {
+    padding: 15px 10px 15px 20px;
+}
+
+.menu_list.menu_list_resp li a:link,
+.menu_list.menu_list_resp li a:visited {
+    color: #fff;
+}
+
+.menu_list.menu_list_resp li a:active,
+.menu_list.menu_list_resp li a.active {
+    color: #000;
+}
+
+.menu_list.menu_list_resp li a:hover {
+    color: #000;
+}
+
+/*-- /Resp Nav --*/
+
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */
 /*-------------------------------------------*/
@@ -1181,10 +1277,6 @@ textarea:focus {
     border-radius: 5px;
 }
 
-.menu_list {
-
-}
-
 .menu_list li {
     margin: 0;
     padding: 2px 0;
@@ -1220,9 +1312,8 @@ textarea:focus {
 }
 
 .menu_list li a {
-    display: inline-block;
-    vertical-align: top;
-    white-space: nowrap;
+    display: inline-flex;
+    display: -webkit-inline-flex;
     font-size: 18px;
     line-height: 22px;
     color: #0987f2;
@@ -1265,10 +1356,6 @@ textarea:focus {
     padding: 12px 0 9px 0;
 }
 
-.h1_wrapp h1 {
-
-}
-
 .two_cols_templ_2 {
     display: flex;
     display: -webkit-flex;
@@ -1290,14 +1377,6 @@ textarea:focus {
     -webkit-border-radius: 5px;
     background-color: rgb(246, 247, 249);
     border: 1px solid rgb(220, 220, 220);
-}
-
-.blue_box_title {
-
-}
-
-.blue_box_title p {
-
 }
 
 .green_link {

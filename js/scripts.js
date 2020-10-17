@@ -312,6 +312,11 @@ $(document).ready(function() {
 
     $("input[type='email']").inputmask("email");
 
+    // -----------
 
+    $(".respmenubtn").on("click", function(e) {
+      e.preventDefault();
+      $("#respNav").toggleClass("visible");
+    });
 
 });
