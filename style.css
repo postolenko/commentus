@@ -2071,6 +2071,10 @@ textarea:focus {
     margin: 7px 0 0 17px;
 }
 
+.ios .comments_items_header .checkbox {
+    margin-top: 5px;
+}
+
 .checkbox input {
     display: block;
     width: 17px;
@@ -2150,6 +2154,10 @@ input[disabled] {
     width: calc( 100% - 50px);
 }
 
+.ios .comment_item .checkbox {
+    margin-top: 2px;
+}
+
 .comment_item .checkbox {
     margin: 4px 0 0 17px;
 }
@@ -2224,6 +2232,10 @@ input[disabled] {
     margin-right: 5px;
     position: relative;
     top: 2px;
+}
+
+.ios .comment_item_header p i {
+    top: 0;
 }
 
 .site_link {

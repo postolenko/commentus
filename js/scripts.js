@@ -13,6 +13,14 @@ function getPillsParams(checkboxesArray) {
       checkboxesArray.find(".pills_wrapp").addClass("disabled");
     }
   });
+  if(checkboxesArray.find(".priceVal").length > 0) {
+    priceVal = parseInt( checkboxesArray.find(".priceVal").text() );      
+    if(priceVal == 0 || priceVal == "") {
+      checkboxesArray.find(".pills_wrapp").addClass("disabled");
+    } else {
+      checkboxesArray.find(".pills_wrapp").removeClass("disabled");
+    } 
+  }
 }
 
 var w = window,
@@ -20,7 +28,6 @@ d = document,
 e = d.documentElement,
 g = d.getElementsByTagName('body')[0],
 bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
-
 
 $(window).load(function() {
 
@@ -230,6 +237,11 @@ $(document).ready(function() {
           });
         }
       });
+      if(price != 0 || price != "") {
+        parentBlock.find(".pills_wrapp").removeClass("disabled");
+      } else {
+        parentBlock.find(".pills_wrapp").addClass("disabled");
+      }  
       parentBlock.find(".priceVal").text(price);
     }
 
