@@ -189,6 +189,41 @@
 
 	<!-- /Header -->
 
+	<!-- Resp Nav -->
+
+	<div class="resp_nav" id="respNav">
+		<div class="resp_nav_header">
+			<div class="user_title user_title_resp">
+				<div>
+					<div class="user_icon_wrapp">
+						<img src="img/user.svg" alt="" />
+					</div>
+				</div>
+				<div>
+					<p>user@mail.com</p>
+				</div>
+			</div>
+			<button class="respmenubtn respmenubtn_2">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		<div class="resp_nav_scroll">
+			<ul class="menu_list menu_list_resp">
+				<li><a href="#"><span><img src="img/globus.svg" alt="" /></span><span>Мои сайты</span></a></li>
+				<li><a href="#"><span><img src="img/bubble_2.svg" alt="" /></span><span>Комментарии</span></a></li>
+				<li><a href="#"><span><img src="img/chart.svg" alt="" /></span><span>Аналитика</span></a></li>
+				<li><a href="#"><span><img src="img/user_2.svg" alt="" /></span><span>Профиль</span></a></li>
+				<li><a href="#"><span><img src="img/money.svg" alt="" /></span><span>Оплата</span></a></li>
+				<li><a href="#"><span><img src="img/settings.svg" alt="" /></span><span>Настройки</span></a></li>
+				<li><a href="#"><span><img src="img/door.svg" alt="" /></span><span>Выход</span></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- /Resp Nav -->
+
 	<!-- Content -->
 		<div class="content">
 
@@ -247,12 +282,12 @@
 										</div>
 										<div class="cell">
 											<div class="radio">
-												<label for="radio_1"><input type="radio" name="r_1" id="radio_1" />400 руб</label>
+												<label for="radio_1"><input type="radio" name="r_1" id="radio_1" value="400" />400 руб</label>
 											</div>
 										</div>
 										<div class="cell">
 											<div class="radio">
-												<label for="radio_2"><input type="radio" name="r_1" id="radio_2" />400 руб</label>
+												<label for="radio_2"><input type="radio" name="r_1" id="radio_2" value="400" />400 руб</label>
 											</div>
 										</div>
 										<div class="cell">
@@ -267,12 +302,12 @@
 										</div>
 										<div class="cell">
 											<div class="radio">
-												<label for="radio_3"><input type="radio" name="r_2" id="radio_3" />400 руб</label>
+												<label for="radio_3"><input type="radio" name="r_2" id="radio_3" value="400" />400 руб</label>
 											</div>
 										</div>
 										<div class="cell">
 											<div class="radio">
-												<label for="radio_4"><input type="radio" name="r_2" id="radio_4" />4000 руб</label>
+												<label for="radio_4"><input type="radio" name="r_2" id="radio_4" value="4000" />4000 руб</label>
 											</div>											
 										</div>
 										<div class="cell">
@@ -287,12 +322,12 @@
 										</div>
 										<div class="cell">
 											<div class="radio">
-												<label for="radio_5"><input type="radio" name="r_3" id="radio_5" />500 руб</label>
+												<label for="radio_5"><input type="radio" name="r_3" id="radio_5" value="500" />500 руб</label>
 											</div>
 										</div>
 										<div class="cell">
 											<div class="radio">
-												<label for="radio_6"><input type="radio" name="r_3" id="radio_6" />5100 руб</label>
+												<label for="radio_6"><input type="radio" name="r_3" id="radio_6" value="5100" />5100 руб</label>
 											</div>
 										</div>
 										<div class="cell">
@@ -302,7 +337,7 @@
 								</div>
 								<div class="pills_wrapp disabled">
 									<div>
-										<a href="#" class="green_pill green_pill_3">Оплатить 800 руб</a>
+										<a href="#" class="green_pill green_pill_3">Оплатить <span id="price">0</span> руб</a>
 									</div>
 								</div>
 							</div>							
