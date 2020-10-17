@@ -609,6 +609,8 @@ textarea:focus {
 .thumb_link {
     display: inline-flex;
     display: -webkit-inline-flex;
+    align-items: center;
+    -webkit-align-items: center;
     margin: 8px 0;
 }
 
