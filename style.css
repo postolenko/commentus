@@ -492,11 +492,14 @@ a:active {
 }
 
 .dropdown_wrapp:after {
+    display: block;
+    content: "";
+    width: 1px;
     height: 36px;
     background: rgba(255, 255, 255, .5);
     position: absolute;
     top: 1px;
-    right: 0;
+    right: -1px;
 }
 
 .dropdown_wrapp:last-child:after {
