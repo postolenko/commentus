@@ -169,6 +169,33 @@
 
 }
 
+@media only screen and (max-width: 700px) {
+
+	/*-- Section 1 - add_site_step_2 --*/
+
+	.pay_table .cell:nth-child(1) {
+		display: block !important;
+		width: 33.33%;
+	}
+
+	.pay_table .cell:nth-child(2) {
+		display: block !important;
+		width: 33.33%;
+	}
+
+	.pay_table .cell:nth-child(3) {
+		display: block !important;
+		width: 33.33%;
+	}
+
+	.pay_table .cell:nth-child(4) {
+		display: none;
+	}
+
+	/*-- /Section 1 - add_site_step_2 --*/
+
+}
+
 @media only screen and (max-width: 600px) {
 
 	/*-- Section 1 - Dashboard --*/
@@ -313,6 +340,15 @@
 	}
 
 	/*-- /Section 1 - Dashboard --*/
+
+	/*-- Section 1 - page --*/
+
+	.pay_table {
+		margin: 0 -15px;
+		border-radius: 0;
+	}
+
+	/*-- /Section 1 - page --*/
 
 	/*-- Footer --*/
 
