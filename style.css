@@ -623,7 +623,7 @@ textarea:focus {
     padding-top: 1px;
 }
 
-.ios.thumb_link > div:nth-child(1) i {
+.ios .thumb_link > div:nth-child(1) i {
     position: relative;
     top: -3px;
 }
