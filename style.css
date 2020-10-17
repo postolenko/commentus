@@ -740,6 +740,10 @@ a:active {
     color: #0987f2;
 }
 
+.menu_list.menu_list_2 li a span:nth-child(1) {
+    width: 36px;
+}
+
 /* ----- Responsive Menu Button ------ */
 
 .respmenubtn {
@@ -908,6 +912,14 @@ a:active {
     padding: 15px 10px 15px 20px;
 }
 
+.menu_list.menu_list_resp li {
+    padding: 3px 0;
+}
+
+.menu_list.menu_list_resp li a span:nth-child(1) {
+    width: 36px;
+}
+
 .menu_list.menu_list_resp li a:link,
 .menu_list.menu_list_resp li a:visited {
     color: #fff;
@@ -1057,7 +1069,7 @@ a:active {
 }
 
 .menu_list li a span:nth-child(1) {
-    width: 26px;
+    width: 30px;
     position: relative;
 }
 

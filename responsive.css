@@ -167,6 +167,60 @@
 
 	/*-- /Section 1 - Dashboard --*/
 
+	.input_wrapp input {
+	    -webkit-border-radius: 9px;
+	    border-radius: 9px;
+	}
+
+	.green_pill {
+	    -webkit-border-radius: 9px;
+	    border-radius: 9px;
+	}
+
+	.socials_list li a {
+	    border-radius: 9px;
+	    -webkit-border-radius: 9px;
+	}
+
+	.thumb_2 {
+	    -webkit-border-radius: 9px;
+	    border-radius: 9px;
+	}
+
+	.tag {
+	    border-radius: 9px;
+	    -webkit-border-radius: 9px;
+	}
+
+	.custom_select_title {
+	    border-radius: 9px;
+	    -webkit-border-radius: 9px;
+	}
+
+	.red_pill {
+	    -webkit-border-radius: 9px;
+	    border-radius: 9px;
+	}
+
+	.grey_pill {
+	    -webkit-border-radius: 9px;
+	    border-radius: 9px;
+	}
+
+	.soc_box {
+	    -webkit-border-radius: 9px;
+	    border-radius: 9px;
+	}
+
+	.table_2_2 {
+	    padding-bottom: 19px;
+	}
+
+	.red_box {
+	    border-radius: 9px;
+	    -webkit-border-radius: 9px;
+	}
+
 }
 
 @media only screen and (max-width: 700px) {
