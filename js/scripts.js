@@ -178,6 +178,7 @@ $(document).ready(function() {
     $(".checkboxes_array").each(function() {
       parentBlock = $(this);
       getPillsParams(parentBlock);
+      getPrice(parentBlock);
     });
 
     $(".main_checkbox input").on("change", function() {
@@ -189,6 +190,7 @@ $(document).ready(function() {
             chChildrens.prop("checked", false);
         }
         getPillsParams(parentBlock);
+        getPrice(parentBlock)
     });
     
     $(".ch_childrens input").on("change", function() {
@@ -207,6 +209,11 @@ $(document).ready(function() {
         getPrice(parentBlock);
     });
 
+    $(".price_table .radio input").on("change", function() {
+      parentBlock = $(this).closest(".price_table");
+      getPrice(parentBlock);
+    });
+
     function getPrice(parentBlock) {
       payTable = parentBlock.find(".table");
       tableRow = payTable.find(".table_row");  
@@ -215,11 +222,13 @@ $(document).ready(function() {
         filterCheckbox = $(this).find(".ch_childrens input");
         if(filterCheckbox.is(":checked")) {
           radio = $(this).find(".radio input");
-          if( radio.is(":checked") ) {
-            radioVal = parseInt(radio.val());
-            console.log(radioVal);
-            price += radioVal;
-          }
+          radio.each(function() {
+            if( $(this).is(":checked") ) {
+              radioVal = parseInt($(this).val());
+              console.log(radioVal);
+              price += radioVal;
+            }
+          });
         } else {
           console.log(0);
         }
