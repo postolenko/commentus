@@ -204,7 +204,28 @@ $(document).ready(function() {
             }
         });
         getPillsParams(parentBlock);
+        getPrice(parentBlock);
     });
+
+    function getPrice(parentBlock) {
+      payTable = parentBlock.find(".table");
+      tableRow = payTable.find(".table_row");  
+      price = 0;
+      tableRow.each(function() {
+        filterCheckbox = $(this).find(".ch_childrens input");
+        if(filterCheckbox.is(":checked")) {
+          radio = $(this).find(".radio input");
+          if( radio.is(":checked") ) {
+            radioVal = parseInt(radio.val());
+            console.log(radioVal);
+            price += radioVal;
+          }
+        } else {
+          console.log(0);
+        }
+      });
+      parentBlock.find(".priceVal").text(price);
+    }
 
     // ---------------
     // -- Валидация --
@@ -275,37 +296,6 @@ $(document).ready(function() {
         }
         // $.ajax({
         // });
-    });
-
-
-    $("#submit").on("click", function (event) {
-        event.preventDefault();
-        error = 0;
-        this_form = $(this).closest("form");
-        this_form.find('input, textarea').removeClass('error');
-        if(this_form.find('input').is('input[name="name"]')) {
-            name = this_form.find('input[name="name"]');
-            if(typeof name.attr('required') != typeof undefined) {
-                if(name.val().length<=2) {
-                    name.addClass('error');
-                    error = 1;
-                }
-            }
-        }
-        if(this_form.find('input').is('input[name="email"]')) {
-            email = this_form.find('input[name="email"]');
-            if(typeof email.attr('required') != typeof undefined) {
-                if(!email.val().match(/^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$/)) {
-                    email.addClass('error');
-                    error = 1;
-                }
-            }
-        }
-        if(error==1) {
-            return false;
-        }
-        $.ajax({
-        });
     });
 
     // -----------
