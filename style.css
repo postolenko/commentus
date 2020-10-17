@@ -623,6 +623,11 @@ textarea:focus {
     padding-top: 1px;
 }
 
+.ios.thumb_link > div:nth-child(1) i {
+    position: relative;
+    top: -3px;
+}
+
 .thumb_link span {
     font-size: 18px;
     line-height: 20px;
