@@ -351,8 +351,8 @@ $(document).ready(function() {
 
     if($("body").hasClass("ios")) {
       $("img").each(function() {
-        if($(this).attr("srcset") != "") {
-          $(this).attr("src", $(this).attr("srcset"));
+        if($(this).attr("data-src") != "") {
+          $(this).attr("src", $(this).attr("data-src"));
         }        
       });
     }
