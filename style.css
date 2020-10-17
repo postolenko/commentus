@@ -1305,6 +1305,7 @@ textarea:focus {
 
 .menu_list li a span:nth-child(2) {
     width: calc(100% - 26px);
+    white-space: nowrap;
 }
 
 .menu_list li a img {
