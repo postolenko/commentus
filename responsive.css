@@ -165,6 +165,26 @@
 	    padding: 8px 0;
 	}
 
+	/*-- /Section 1 - Dashboard --*/
+
+}
+
+@media only screen and (max-width: 600px) {
+
+	/*-- Section 1 - Dashboard --*/
+
+	.thumbnails_2 {
+	    margin: 0;
+	    flex-wrap: wrap;
+	    -webkit-flex-wrap: wrap;
+	}
+
+	.thumb_2 {
+	    width: 100%;
+	    max-width: 400px;
+	    margin: 10px 0;
+	}
+
 	.table_2 .table_row .cell:nth-child(1) {
 	    width: 45%;
 	}
@@ -187,26 +207,6 @@
 
 	.table .table_row .cell {
 	    padding: 7px 11px;
-	}
-
-	/*-- /Section 1 - Dashboard --*/
-
-}
-
-@media only screen and (max-width: 600px) {
-
-	/*-- Section 1 - Dashboard --*/
-
-	.thumbnails_2 {
-	    margin: 0;
-	    flex-wrap: wrap;
-	    -webkit-flex-wrap: wrap;
-	}
-
-	.thumb_2 {
-	    width: 100%;
-	    max-width: 400px;
-	    margin: 10px 0;
 	}
 
 	/*-- /Section 1 - Dashboard --*/
@@ -288,6 +288,31 @@
 	}
 
 	/*-- /Section 1 - page --*/
+
+	/*-- Section 1 - add_site_step_2 --*/
+
+	.copy_box pre {
+	    font-size: 14px;
+	    line-height: 20px;
+	}
+
+	.thumb_1 {
+	    width: 100%;
+	}
+
+	/*-- /Section 1 - add_site_step_2 --*/
+
+	/*-- Section 1 - Dashboard --*/
+
+	.table_2 .table_row .cell:nth-child(1) {
+	    width: 45%;
+	}
+
+	.table_2 .table_row .cell:nth-child(4) {
+	    width: 55%;
+	}
+
+	/*-- /Section 1 - Dashboard --*/
 
 	/*-- Footer --*/
 

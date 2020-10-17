@@ -1220,6 +1220,9 @@ textarea:focus {
 }
 
 .menu_list li a {
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
     font-size: 18px;
     line-height: 22px;
     color: #0987f2;
