@@ -349,4 +349,12 @@ $(document).ready(function() {
     if (navigator.appVersion.indexOf("X11")!=-1) $("body").addClass("ios");
     if (navigator.appVersion.indexOf("Linux")!=-1) $("body").addClass("ios");
 
+    if($("body").hasClass("ios")) {
+      $("img").each(function() {
+        if($(this).attr("srcset") != "") {
+          $(this).attr("src", $(this).attr("srcset"));
+        }        
+      });
+    }
+
 });

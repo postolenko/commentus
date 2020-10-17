@@ -1532,8 +1532,8 @@ textarea:focus {
     display: block;
     width: auto;
     height: auto;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 75%;
+    max-height: 76%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -3342,6 +3342,10 @@ input[disabled] {
     left: 0;
 }
 
+.ios .checkbox label input {
+    top: -1px;
+}
+
 .checkbox label {
     cursor: pointer;
 }
@@ -3406,6 +3410,10 @@ input[disabled] {
     transition-property: opacity;
     transition-duration: .3s;
     transition-timing-function: ease;
+}
+
+.ios .radio input:before {
+    top: 2px;
 }
 
 .radio input:checked:before {
