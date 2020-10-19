@@ -243,6 +243,14 @@
 		padding-top: 2px;
 	}
 
+	.ios .tag {
+	    padding: 5px 5px 3px 5px;
+	}
+
+	.ios .socials_list li a span {
+		padding-top: 2px;
+	}
+
 	/*--- /IOS ---*/
 
 }
