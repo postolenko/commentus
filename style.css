@@ -1604,6 +1604,11 @@ a:active {
     color: #000000;
 }
 
+/*::-webkit-input-placeholder {color:#555555;}
+::-moz-placeholder          {color:#555555;}
+:-moz-placeholder           {color:#555555;}
+:-ms-input-placeholder      {color:#555555;}*/
+
 .custom_select_dropdown {
     display: none;
     width: 100%;

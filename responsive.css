@@ -251,6 +251,14 @@
 		padding-top: 2px;
 	}
 
+	.ios .input_wrapp input {
+	    padding: 0 15px 2px 15px;
+	}
+
+	.ios .custom_select_3 .custom_select_title p {
+		padding-top: 2px;
+	}
+
 	/*--- /IOS ---*/
 
 }
