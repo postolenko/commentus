@@ -2187,6 +2187,7 @@ input[disabled] {
 .pagination li a {
     display: block;
     min-width: 23px;
+    height: 25px;
     text-align: center;
     font-size: 16px;
     line-height: 25px;
@@ -2262,6 +2263,7 @@ input[disabled] {
 .green_pill {
     display: inline-block;
     vertical-align: top;
+    white-space: nowrap;
     cursor: pointer;
     border: none;
     padding: 10px 13px 11px 13px;
@@ -2322,6 +2324,7 @@ input[disabled] {
 .red_pill {
     display: inline-block;
     vertical-align: top;
+    white-space: nowrap;
     cursor: pointer;
     border: none;
     padding: 10px 13px 11px 13px;
@@ -2380,6 +2383,7 @@ input[disabled] {
 .grey_pill {
     display: inline-block;
     vertical-align: top;
+    white-space: nowrap;
     cursor: pointer;
     border: none;
     padding: 10px 13px 11px 13px;
@@ -2435,6 +2439,24 @@ input[disabled] {
     margin-right: 5px;
     position: relative;
     top: 4px;
+}
+
+.green_pill span {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 2px;
+}
+
+.red_pill span {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 2px;
+}
+
+.grey_pill span {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 2px;
 }
 
 .checked_white {

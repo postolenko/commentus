@@ -221,6 +221,30 @@
 	    -webkit-border-radius: 9px;
 	}
 
+	/*--- IOS ---*/
+
+	.ios .drp_title:after {
+	    margin-top: -6px;
+	}
+
+	.ios .red_box {
+	    padding: 10px 10px 8px 10px;
+	}
+
+	.ios .green_pill_2 {
+	    padding: 10px 13px 14px 13px;
+	}
+
+	.ios ul li:before {
+	    top: 9px;
+	}
+
+	.ios .pagination li a {
+		padding-top: 2px;
+	}
+
+	/*--- /IOS ---*/
+
 }
 
 @media only screen and (max-width: 700px) {
