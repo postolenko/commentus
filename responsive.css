@@ -259,6 +259,14 @@
 		padding-top: 2px;
 	}
 
+	.ios .checkbox label input {
+	    top: 3px;
+	}
+
+	.ios .radio label input {
+	    top: 0;
+	}
+
 	/*--- /IOS ---*/
 
 }
