@@ -3194,7 +3194,8 @@ input[disabled] {
     -webkit-border-radius: 50%;
     background-color: #000028;
     position: absolute;
-    top: 7px;
+    top: 50%;
+    margin-top: -3px;
     left: 5px;
     opacity: 0;
     -webkit-transition-property: opacity;
