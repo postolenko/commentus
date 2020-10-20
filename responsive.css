@@ -221,54 +221,6 @@
 	    -webkit-border-radius: 9px;
 	}
 
-	/*--- IOS ---*/
-
-	.ios .drp_title:after {
-	    margin-top: -6px;
-	}
-
-	.ios .red_box {
-	    padding: 10px 10px 8px 10px;
-	}
-
-	.ios .green_pill_2 {
-	    padding: 12px 13px 12px 13px;
-	}
-
-	.ios ul li:before {
-	    top: 9px;
-	}
-
-	.ios .pagination li a {
-		padding-top: 2px;
-	}
-
-	.ios .tag {
-	    padding: 5px 5px 3px 5px;
-	}
-
-	.ios .socials_list li a span {
-		padding-top: 2px;
-	}
-
-	.ios .input_wrapp input {
-	    padding: 0 15px 2px 15px;
-	}
-
-	.ios .custom_select_3 .custom_select_title p {
-		padding-top: 2px;
-	}
-
-	.ios .checkbox label input {
-	    top: 2px;
-	}
-
-	.ios .radio label input {
-	    top: 0;
-	}
-
-	/*--- /IOS ---*/
-
 }
 
 @media only screen and (max-width: 700px) {

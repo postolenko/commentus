@@ -1857,13 +1857,6 @@ a:active {
 }
 
 .checkbox input {
-/*    display: block;
-    width: 17px;
-    height: 17px;
-    cursor: pointer;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border: 1px solid rgb(168, 168, 168);*/
     position: absolute;
     top: 0;
     left: 0;
@@ -3640,3 +3633,52 @@ textarea.error,
 .custom_select_title.error {
     border: 1px solid red;
 }
+
+
+/*--- IOS ---*/
+
+.ios .drp_title:after {
+    margin-top: -6px;
+}
+
+.ios .red_box {
+    padding: 10px 10px 8px 10px;
+}
+
+.ios .green_pill_2 {
+    padding: 12px 13px 12px 13px;
+}
+
+.ios ul li:before {
+    top: 9px;
+}
+
+.ios .pagination li a {
+    padding-top: 2px;
+}
+
+.ios .tag {
+    padding: 5px 5px 3px 5px;
+}
+
+.ios .socials_list li a span {
+    padding-top: 2px;
+}
+
+.ios .input_wrapp input {
+    padding: 0 15px 2px 15px;
+}
+
+.ios .custom_select_3 .custom_select_title p {
+    padding-top: 2px;
+}
+
+.ios .checkbox label span:before {
+    top: 2px;
+}
+
+.ios .radio label:before {
+    top: 1px;
+}
+
+/*--- /IOS ---*/
