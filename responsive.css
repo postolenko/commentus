@@ -518,6 +518,20 @@
 
 	/*-- /Breadcrumbs --*/
 
+	/*-- Section 1 - comments --*/
+
+	.comment_item_footer_wrapp {
+	    flex-wrap: wrap;
+	    -webkit-flex-wrap: wrap;
+	}
+
+	.comment_item_footer_wrapp > div:nth-child(1),
+	.comment_item_footer_wrapp > div:nth-child(2) {
+	    width: 100%;
+	}
+
+	/*-- /Section 1 - comments --*/
+
 }
 
 @media only screen and (min-width: 768px) {
