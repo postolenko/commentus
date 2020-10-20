@@ -4,23 +4,32 @@ function getWrapperOffset() {
   });
 }
 
-function getPillsParams(checkboxesArray) {
-  checkboxesArray.find(".ch_childrens").each(function() {
-    if($(this).find("input").is(":checked")) {
-      checkboxesArray.find(".pills_wrapp").removeClass("disabled");
-      return false;
-    } else {
-      checkboxesArray.find(".pills_wrapp").addClass("disabled");
-    }
-  });
+function getPillsParams(checkboxesArray) {  
   if(checkboxesArray.find(".priceVal").length > 0) {
+
     priceVal = parseInt( checkboxesArray.find(".priceVal").text() );      
     if(priceVal == 0 || priceVal == "") {
       checkboxesArray.find(".pills_wrapp").addClass("disabled");
     } else {
       checkboxesArray.find(".pills_wrapp").removeClass("disabled");
-    } 
+    }
+
+  } else {
+
+    checkboxesArray.find(".ch_childrens").each(function() {
+      if($(this).find("input").is(":checked")) {
+        checkboxesArray.find(".pills_wrapp").removeClass("disabled");
+        return false;
+      } else {
+        checkboxesArray.find(".pills_wrapp").addClass("disabled");
+      }
+    });
+    
   }
+
+
+
+
 }
 
 var w = window,
