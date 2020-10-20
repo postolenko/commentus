@@ -669,6 +669,12 @@ a:active {
     height: 18px;
 }
 
+.lang_link > div:nth-child(1) img {
+    display: block;
+    width: auto;
+    max-width: 17px;
+}
+
 .lang_link > div:nth-child(2) {
     width: calc(100% - 25px);
 }
@@ -1481,7 +1487,8 @@ a:active {
 }
 
 .table .table_row .cell {
-    padding: 11px 15px;
+    /*padding: 11px 15px;*/
+    padding: 9px 15px 10px 15px;
 }
 
 .table .table_row .cell:nth-child(1) {
@@ -1845,21 +1852,45 @@ a:active {
     margin-top: 5px;
 }
 
+.checkbox label {
+    position: relative;
+}
+
 .checkbox input {
-    display: block;
+/*    display: block;
     width: 17px;
     height: 17px;
     cursor: pointer;
     border-radius: 2px;
     -webkit-border-radius: 2px;
+    border: 1px solid rgb(168, 168, 168);*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    padding: 0;
+    width: 0;
+}
+
+.checkbox label span:before {
+    display: block;
+    content: "";
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
     border: 1px solid rgb(168, 168, 168);
+    position: absolute;
+    top: 3px;
+    left: 0;
 }
 
 input[disabled] {
     cursor: default;
 }
 
-.checkbox input:checked {
+.checkbox input:checked + span:before{
     background-image: url(img/checked_white.svg);
     background-size: 10px;
     background-position: center;
@@ -3145,30 +3176,33 @@ input[disabled] {
     padding-left: 25px;
 }
 
-.radio label input {
+.radio label:before {
+    display: block;
+    content: "";
     background-color: #fff;
     position: absolute;
     top: 2px;
     left: 0;
     cursor: pointer;
-    width: 17px;
-    height: 17px;
+    width: 14px;
+    height: 14px;
     background-color: #fff;
     border: 1px solid #adaeb3;
     border-radius: 50%;
     -webkit-border-radius: 50%;
 }
 
-.radio input:before {
+.radio label span:after {
+    display: block;
     content: "";
-    width: 7px;
-    height: 7px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     background-color: #000028;
     position: absolute;
-    top: 4px;
-    left: 4px;
+    top: 7px;
+    left: 5px;
     opacity: 0;
     -webkit-transition-property: opacity;
     -webkit-transition-duration: .3s;
@@ -3191,12 +3225,18 @@ input[disabled] {
     transition-timing-function: ease;
 }
 
-.ios .radio input:before {
-    top: 2px;
+.radio label input:checked + span:after {
+    opacity: 1;
 }
 
-.radio input:checked:before {
-    opacity: 1;
+.radio label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    padding: 0;
+    opacity: 0;
 }
 
 .green_pill_3 {

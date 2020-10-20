@@ -232,7 +232,7 @@
 	}
 
 	.ios .green_pill_2 {
-	    padding: 10px 13px 14px 13px;
+	    padding: 12px 13px 12px 13px;
 	}
 
 	.ios ul li:before {
@@ -260,7 +260,7 @@
 	}
 
 	.ios .checkbox label input {
-	    top: 3px;
+	    top: 2px;
 	}
 
 	.ios .radio label input {
