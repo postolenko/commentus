@@ -3674,12 +3674,16 @@ textarea.error,
     padding-top: 2px;
 }
 
+.ios .table .table_row .cell {
+    padding: 10px 15px 9px 15px;
+}
+
 .ios .checkbox label span:before {
     top: 2px;
 }
 
 .ios .radio label span:after {
-    margin-top: -4px;
+    margin-top: -3px;
 }
 
 /*--- /IOS ---*/
