@@ -3679,7 +3679,7 @@ textarea.error,
 }
 
 .ios .radio label:before {
-    top: 1px;
+    margin-top: -9px;
 }
 
 /*--- /IOS ---*/
