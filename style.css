@@ -3682,8 +3682,8 @@ textarea.error,
     top: 0;
 }
 
-.ios .radio label span:after {
-    margin-top: -4px;
+.ios .radio label:before {
+    top: 1px;
 }
 
 /*--- /IOS ---*/
