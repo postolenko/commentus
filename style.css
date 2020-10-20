@@ -3679,7 +3679,7 @@ textarea.error,
 }
 
 .ios .checkbox label span:before {
-    top: 1px;
+    top: 0;
 }
 
 .ios .radio label span:after {
