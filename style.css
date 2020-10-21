@@ -1624,7 +1624,7 @@ a:active {
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 3;
+    z-index: 5;
     background: #fff;
 }
 
