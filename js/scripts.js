@@ -186,7 +186,7 @@ $(document).ready(function() {
     $(".checkboxes_array").each(function() {
       parentBlock = $(this);
       getPillsParams(parentBlock);
-      getPrice(parentBlock);
+      // getPrice(parentBlock);
     });
 
     $(".main_checkbox input").on("change", function() {
