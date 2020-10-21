@@ -223,27 +223,29 @@ $(document).ready(function() {
     });
 
     function getPrice(parentBlock) {
-      payTable = parentBlock.find(".table");
-      tableRow = payTable.find(".table_row");  
-      price = 0;
-      tableRow.each(function() {
-        filterCheckbox = $(this).find(".ch_childrens input");
-        if(filterCheckbox.is(":checked")) {
-          radio = $(this).find(".radio input");
-          radio.each(function() {
-            if( $(this).is(":checked") ) {
-              radioVal = parseInt($(this).val());
-              price += radioVal;
-            }
-          });
-        }
-      });
-      if(price != 0 || price != "") {
-        parentBlock.find(".pills_wrapp").removeClass("disabled");
-      } else {
-        parentBlock.find(".pills_wrapp").addClass("disabled");
-      }  
-      parentBlock.find(".priceVal").text(price);
+      if(parentBlock.hasClass("price_table")) {
+        payTable = parentBlock.find(".table");
+        tableRow = payTable.find(".table_row");  
+        price = 0;
+        tableRow.each(function() {
+          filterCheckbox = $(this).find(".ch_childrens input");
+          if(filterCheckbox.is(":checked")) {
+            radio = $(this).find(".radio input");
+            radio.each(function() {
+              if( $(this).is(":checked") ) {
+                radioVal = parseInt($(this).val());
+                price += radioVal;
+              }
+            });
+          }
+        });
+        if(price != 0 || price != "") {
+          parentBlock.find(".pills_wrapp").removeClass("disabled");
+        } else {
+          parentBlock.find(".pills_wrapp").addClass("disabled");
+        }  
+        parentBlock.find(".priceVal").text(price);
+      }
     }
 
     // ---------------

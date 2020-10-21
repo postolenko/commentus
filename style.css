@@ -3737,4 +3737,8 @@ textarea.error,
     top: 1px;
 }
 
+.ios .breadcrumbs li:after {
+    top: 3px;
+}
+
 /*--- /IOS ---*/
