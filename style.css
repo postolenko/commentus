@@ -1612,64 +1612,63 @@ a:active {
     color: #000000;
 }
 
-/*::-webkit-input-placeholder {color:#555555;}
-::-moz-placeholder          {color:#555555;}
-:-moz-placeholder           {color:#555555;}
-:-ms-input-placeholder      {color:#555555;}*/
-
 .custom_select_dropdown {
     display: none;
     width: 100%;
     margin-top: 12px;
-    padding: 10px 15px 13px 15px;
+    padding: 6px 0 10px 0;
     border: 1px solid rgb(235, 232, 232);
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
     background-color: rgb(255, 255, 255);
     position: absolute;
     top: 100%;
     left: 0;
     z-index: 3;
+    background: #fff;
 }
 
 .custom_select_dropdown p {
+    display: block;
+    padding: 6px 15px 6px 15px;
     cursor: pointer;
     font-size: 17px;
     line-height: 23px;
-    color: #0987f2;
-    -webkit-transition-property: color;
+    color: #000;
+    background-color: transparent;
+    -webkit-transition-property: background;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
 
-    -moz-transition-property: color;
+    -moz-transition-property: background;
     -moz-transition-duration: .3s;
     -moz-transition-timing-function: ease;
 
-    -ms-transition-property: color;
+    -ms-transition-property: background;
     -ms-transition-duration: .3s;
     -ms-transition-timing-function: ease;
 
-    -o-transition-property: color;
+    -o-transition-property: background;
     -o-transition-duration: .3s;
     -o-transition-timing-function: ease;
 
-    transition-property: color;
+    transition-property: background;
     transition-duration: .3s;
     transition-timing-function: ease;
 }
 
 .custom_select_dropdown p:link,
 .custom_select_dropdown p:visited {
-    color: #0987f2;
+    background-color: transparent;
 }
 
 .custom_select_dropdown p:active,
 .custom_select_dropdown p.active {
-    color: #000;
+    background-color: #f6f7f9;
 }
 
 .custom_select_dropdown p:hover {
-    color: #000;
+    background-color: #f6f7f9;
 }
 
 .tabs {
