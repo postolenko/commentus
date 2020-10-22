@@ -673,6 +673,8 @@ a:active {
     display: block;
     width: auto;
     max-width: 17px;
+    position: relative;
+    top: 3px;
 }
 
 .lang_link > div:nth-child(2) {
