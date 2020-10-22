@@ -2342,10 +2342,11 @@ input[disabled] {
 .green_pill {
     display: inline-block;
     vertical-align: top;
+    min-height: 40px;
     white-space: nowrap;
     cursor: pointer;
     border: none;
-    padding: 10px 13px 11px 13px;
+    padding: 8px 13px 10px 13px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
     background-color: rgb(31, 199, 112);
@@ -2397,16 +2398,17 @@ input[disabled] {
 .green_pill i {
     margin-right: 5px;
     position: relative;
-    top: 4px;
+    top: 5px;
 }
 
 .red_pill {
     display: inline-block;
     vertical-align: top;
+    min-height: 40px;
     white-space: nowrap;
     cursor: pointer;
     border: none;
-    padding: 10px 13px 11px 13px;
+    padding: 8px 13px 10px 13px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
     background-color: rgb(199, 31, 31);
@@ -2457,15 +2459,17 @@ input[disabled] {
 
 .red_pill i {
     margin-right: 5px;
+    margin-top: 2px;
 }
 
 .grey_pill {
     display: inline-block;
     vertical-align: top;
+    min-height: 40px;
     white-space: nowrap;
     cursor: pointer;
     border: none;
-    padding: 10px 13px 11px 13px;
+    padding: 8px 13px 10px 13px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
     background-color: #717171;
@@ -2517,7 +2521,7 @@ input[disabled] {
 .grey_pill i {
     margin-right: 5px;
     position: relative;
-    top: 4px;
+    top: 6px;
 }
 
 .green_pill span {
