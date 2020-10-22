@@ -1490,7 +1490,6 @@ a:active {
 }
 
 .table .table_row .cell {
-    /*padding: 11px 15px;*/
     padding: 9px 15px 10px 15px;
 }
 
@@ -1905,18 +1904,6 @@ input[disabled] {
 .comment_item.noactive {
     opacity: .8;
 }
-
-/*.comment_item.noactive:after {
-    display: block;
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, .4);
-    z-index: 3;
-}*/
 
 .comment_item.orange:before {
     display: block;
